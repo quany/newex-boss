@@ -3,7 +3,6 @@ import UserProfile from "views/UserProfile/UserProfile.jsx";
 import TableList from "views/TableList/TableList.jsx";
 import Typography from "views/Typography/Typography.jsx";
 import Icons from "views/Icons/Icons.jsx";
-import Maps from "views/Maps/Maps.jsx";
 import NotificationsPage from "views/Notifications/Notifications.jsx";
 
 import {
@@ -12,22 +11,21 @@ import {
   ContentPaste,
   LibraryBooks,
   BubbleChart,
-  LocationOn,
   Notifications
 } from "material-ui-icons";
 
 const appRoutes = [
   {
     path: "/dashboard",
-    sidebarName: "Dashboard",
-    navbarName: "Material Dashboard",
+    sidebarName: "控制台",
+    navbarName: "Material 控制台",
     icon: Dashboard,
     component: DashboardPage
   },
   {
     path: "/user",
-    sidebarName: "User Profile",
-    navbarName: "Profile",
+    sidebarName: "用户个人信息",
+    navbarName: "个人信息",
     icon: Person,
     component: UserProfile
   },
@@ -40,29 +38,22 @@ const appRoutes = [
   },
   {
     path: "/typography",
-    sidebarName: "Typography",
-    navbarName: "Typography",
+    sidebarName: "字体",
+    navbarName: "字体",
     icon: LibraryBooks,
     component: Typography
   },
   {
     path: "/icons",
-    sidebarName: "Icons",
-    navbarName: "Icons",
+    sidebarName: "图标",
+    navbarName: "图标",
     icon: BubbleChart,
     component: Icons
   },
   {
-    path: "/maps",
-    sidebarName: "Maps",
-    navbarName: "Map",
-    icon: LocationOn,
-    component: Maps
-  },
-  {
     path: "/notifications",
-    sidebarName: "Notifications",
-    navbarName: "Notifications",
+    sidebarName: "通知提醒",
+    navbarName: "通知提醒",
     icon: Notifications,
     component: NotificationsPage
   },
